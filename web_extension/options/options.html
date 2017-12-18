@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head><title>Options</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="options.css"/>
+</head>
+<body>
+	<h1>Drug Clock Settings</h1>
+
+	<div class="title" id="orion_settings">&raquo; Orion</div>
+	<ul id="orion_settings_list" class="show">
+		<li class="section"><input type="checkbox" id="boolEnabledOrion"/> <label for="boolEnabledOrion">Enable Drug Clock for Orion</label></li>
+		<li><div><input type="checkbox" id="boolEnableTakeDrugsToggleOrion"/> <label for="boolEnableTakeDrugsToggleOrion">Enable use drugs key toggle</label></div> <input type="text" id="strTakeDrugsToggleOrion" maxlength="4"/> <label for="strTakeDrugsToggleOrion">Use drugs key shortcut</label></li>
+		<li><div><input type="checkbox" id="boolHasTripControlOrion"/> <label for="boolHasTripControlOrion">Advanced skill Trip Control</label></div> <input type="text" id="strMeditationLevelOrion" maxlength="1"/> <label for="strMeditationLevelOrion">Advanced skill Meditation level</label></li>
+		<li><div><input type="checkbox" id="boolEnableClockDisplayToggleOrion"/> <label for="boolEnableClockDisplayToggleOrion">Show drug clock on screen</label></div> <select id="strClockLocationOrion"><option value="status">Below status panel</option><option value="commands">Below commands panel</option><option value="yourship">Below your ship panel</option><option value="cargo">Below cargo panel</option><option value="belownav">Below main nav panel</option></select>
+		</li>
+	</ul>
+
+	<div class="title" id="artemis_settings">&raquo; Artemis</div>
+	<ul id="artemis_settings_list">
+		<li class="section"><input type="checkbox" id="boolEnabledArtemis"/> <label for="boolEnabledArtemis">Enable Drug Clock for Artemis</label></li>
+		<li><div><input type="checkbox" id="boolEnableTakeDrugsToggleArtemis"/> <label for="boolEnableTakeDrugsToggleArtemis">Enable use drugs key toggle</label></div> <input type="text" id="strTakeDrugsToggleArtemis" maxlength="4"/> <label for="strTakeDrugsToggleArtemis">Use drugs key shortcut</label></li>
+		<li><div><input type="checkbox" id="boolHasTripControlArtemis"/> <label for="boolHasTripControlArtemis">Advanced skill Trip Control</label></div> <input type="text" id="strMeditationLevelArtemis" maxlength="1"/> <label for="strMeditationLevelArtemis">Advanced skill Meditation level</label></li>
+		<li><div><input type="checkbox" id="boolEnableClockDisplayToggleArtemis"/> <label for="boolEnableClockDisplayToggleArtemis">Show drug clock on screen</label></div> <select id="strClockLocationArtemis"><option value="status">Below status panel</option><option value="commands">Below commands panel</option><option value="yourship">Below your ship panel</option><option value="cargo">Below cargo panel</option><option value="belownav">Below main nav panel</option></select>
+	</ul>
+
+	<div class="title" id="pegasus_settings">&raquo; Pegasus</div>
+	<ul id="pegasus_settings_list">
+		<li class="section"><input type="checkbox" id="boolEnabledPegasus"/> <label for="boolEnabledPegasus">Enable Drug Clock for Pegasus</label></li>
+		<li><div><input type="checkbox" id="boolEnableTakeDrugsTogglePegasus"/> <label for="boolEnableTakeDrugsTogglePegasus">Enable use drugs key toggle</label></div> <input type="text" id="strTakeDrugsTogglePegasus" maxlength="4"/> <label for="strTakeDrugsTogglePegasus">Use drugs key shortcut</label></li>
+		<li><div><input type="checkbox" id="boolHasTripControlPegasus"/> <label for="boolHasTripControlPegasus">Advanced skill Trip Control</label></div> <input type="text" id="strMeditationLevelPegasus" maxlength="1"/> <label for="strMeditationLevelPegasus">Advanced skill Meditation level</label></li>
+		<li><div><input type="checkbox" id="boolEnableClockDisplayTogglePegasus"/> <label for="boolEnableClockDisplayTogglePegasus">Show drug clock on screen</label></div> <select id="strClockLocationPegasus"><option value="status">Below status panel</option><option value="commands">Below commands panel</option><option value="yourship">Below your ship panel</option><option value="cargo">Below cargo panel</option><option value="belownav">Below main nav panel</option></select>
+	</ul>
+
+	<div class="cta_save"><button id="save">Save Settings</button> <span id="status"></span></div>
+
+	<script src="options.js"></script>
+</body>
+</html>

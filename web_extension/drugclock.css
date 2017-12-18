@@ -1,0 +1,34 @@
+#druggednessClock {
+	text-align: center;
+	font-size: 11px;
+	padding-top: 4px;
+	color:#ccd;
+	width: 210px;
+	position: absolute;
+}
+
+#tdTabsRight #druggednessClock {
+	right: 0;
+}
+
+#tdSpaceChart #druggednessClock {
+	position: relative;
+	margin: 0 auto 0 auto;
+}
+
+#resetDrugCounters {
+	margin: 0 6px 0 0;
+	cursor: pointer;
+	border: 1px solid #999;
+	padding: 2px 2px 0 2px;
+}
+
+#SdrugLabel {
+	margin: 0 6px 0 0;
+	cursor: pointer;
+}
+
+#SdrugiLabel {
+	margin: 0 6px 0 10px;
+	cursor: pointer;
+}
