@@ -52,6 +52,12 @@ DrugClock.prototype.init = function() {
 			}
 		}
 		
+		if (this.doc.URL.indexOf('pardus.at/logout.php') > -1) {
+			if (this['boolEnableClockDisplayToggle' + this.universe]) {
+				this.showDrugClock();
+			}
+		}
+		
 		if (this.doc.URL.indexOf('pardus.at/main.php?use=51') > -1) {
 			let _amountEl = this.doc.querySelector('input[name="amount"]');
 			if (_amountEl) {
@@ -147,11 +153,19 @@ DrugClock.prototype.addDrugClockToThePage = function() {
 	if (clockLocation === 'belownav') {
 		query = '#tdSpaceChart > table';
 	}
+	
+	if (this.doc.URL.indexOf('pardus.at/logout.php') > -1) {
+		query = 'table[cellspacing="6"]';
+	}
 	let targetTable = this.doc.querySelector(query);
 
 	if (targetTable) {
 		let clockDiv = this.doc.createElement('div');
 		clockDiv.id = 'druggednessClock';
+
+		if (this.doc.URL.indexOf('pardus.at/logout.php') > -1) {
+			clockDiv.classList.add('logout');
+		}
 
 		let resetSpan = this.doc.createElement('span');
 		resetSpan.id = 'resetDrugCounters';

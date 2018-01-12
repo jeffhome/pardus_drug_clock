@@ -2,7 +2,7 @@
 	"manifest_version": 2,
 	"name": "Pardus Drug Clock",
 	"author": "Miche",
-	"version": "1.4.0",
+	"version": "1.5.0",
 	"description": "Track how many drugs you have consumed within Pardus (a MMORPG set in space) to ensure that you don't become too drugged.",
 	"icons": {
 		"16":  "icons/icon_16.png",
@@ -15,16 +15,19 @@
 			"matches": [
 				"*://orion.pardus.at/main.php*",
 				"*://orion.pardus.at/building.php",
+				"*://orion.pardus.at/logout.php",
 				"*://orion.pardus.at/ship2ship_combat.php*",
 				"*://orion.pardus.at/ship2opponent_combat.php*",
 				
 				"*://artemis.pardus.at/main.php*",
 				"*://artemis.pardus.at/building.php",
+				"*://artemis.pardus.at/logout.php",
 				"*://artemis.pardus.at/ship2ship_combat.php*",
 				"*://artemis.pardus.at/ship2opponent_combat.php*",
 				
 				"*://pegasus.pardus.at/main.php*",
 				"*://pegasus.pardus.at/building.php",
+				"*://pegasus.pardus.at/logout.php",
 				"*://pegasus.pardus.at/ship2ship_combat.php*",
 				"*://pegasus.pardus.at/ship2opponent_combat.php*"
 			],
@@ -52,16 +55,9 @@
 	},
 	"options_ui": {
 		"page": "options/options.html",
-		"chrome_style": true,
-		"browser_style": true
+		"chrome_style": true
 	},
 	"web_accessible_resources": [
 		"images/*.png"
-	],
-	"applications": {
-		"gecko": {
-			"id": "pardusdrugclock@xcom-alliance.info",
-			"strict_min_version": "56.0"
-		}
-	}
+	]
 }

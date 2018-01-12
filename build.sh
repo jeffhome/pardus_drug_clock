@@ -53,7 +53,7 @@ fi
 
 # Build for all browsers
 if [ "$2" = "all" ]; then
-	echo "Building for all TARGET_BROWSERs..."
+	echo "Building for all browsers..."
 	cp ../manifest_firefox.json manifest.json
 	zip -r $FILE_NAME.xpi ./*
 	mv $FILE_NAME.xpi ../
@@ -64,6 +64,6 @@ if [ "$2" = "all" ]; then
 	echo "Done!"
 fi
 
-# Mmove back up again
+# Move back up again
 cd ../
 exit

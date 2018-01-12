@@ -7,6 +7,10 @@
 	position: absolute;
 }
 
+#druggednessClock.logout {
+	position: relative;
+}
+
 #tdTabsRight #druggednessClock {
 	right: 0;
 }
@@ -21,6 +25,10 @@
 	cursor: pointer;
 	border: 1px solid #999;
 	padding: 2px 2px 0 2px;
+}
+
+.logout #resetDrugCounters {
+	display: none;
 }
 
 #SdrugLabel {
